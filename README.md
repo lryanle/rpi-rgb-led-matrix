@@ -22,6 +22,10 @@ The LED-matrix library is (c) Henner Zeller <h.zeller@acm.org>, licensed with
 source and all your modifications available to the receiver of such product so
 that they have the freedom to adapt and improve).
 
+## Ryan's Changes
+- U-mapper has been updated from a left-turn to a right-turn transformation to better fit my LED matricies
+- Command: `sudo ./demo -D 9 --led-rows=64 --led-cols=64 --led-gpio-mapping=adafruit-hat-pwm --led-chain=4 --led-slowdown-gpio=2 --led-pixel-mapper="U-mapper;Rotate:180"`
+
 ## Discourse discussion group
 
 If you'd like help, please do not file a bug, use the discussion board instead:

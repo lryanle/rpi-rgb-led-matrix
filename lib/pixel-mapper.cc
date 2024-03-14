@@ -204,13 +204,13 @@ public:
     const int base_y = (y / slab_height) * panel_height;
     y %= slab_height;
     if (y < panel_height) {
-      x += matrix_width / 2;
+      *matrix_x = x + matrix_width / 2;
+      *matrix_y = panel_height - y - 1;
     } else {
-      x = visible_width - x - 1;
+      *matrix_x = visible_width - x - 1;
       y = slab_height - y - 1;
+      *matrix_y = base_y + panel_height - y - 1;
     }
-    *matrix_x = x;
-    *matrix_y = base_y + y;
   }
 
 private:

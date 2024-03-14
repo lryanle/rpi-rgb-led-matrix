@@ -276,8 +276,8 @@ So the following chain (Viewed looking at the LED-side of the panels)
     [<][<][<][<] }- Raspbery Pi connector
 
 is arranged in this U-shape (on its side)
-    [<][<] }----- Raspberry Pi connector
     [>][>]
+    [<][<] }----- Raspberry Pi connector
 ```
 
 Now we need to internally map pixels the pixels so that the 'folded' 128x32
